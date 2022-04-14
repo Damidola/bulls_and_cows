@@ -28,13 +28,13 @@ def play(real_number):
             elif guess[i] in real_number and not guess[i] == real_number[i]:
                 cow += 1   # к-сть корів, якщо цифра є у числі та вона не на своєму місці
 
-        print(f'Введене число: {guess}')
-        print(f'Бики: {bull}, Корови: {cow}')
-        print(f'Спроб: {c}')  # Виводимо дані
-
         if guess == real_number:
             print('Це правильне число!')
             break  # Обриваємо цикл, коли число вгадане
+            
+        print(f'Введене число: {guess}')
+        print(f'Бики: {bull}, Корови: {cow}')
+        print(f'Спроб: {c}')  # Виводимо дані
 
 
 # Компьютер загадує чотиризначне число з різними цифрами
